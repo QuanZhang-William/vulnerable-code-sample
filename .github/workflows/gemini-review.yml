@@ -108,7 +108,7 @@ jobs:
                 "run_shell_command(tail)"
               ]
             }
-          prompt: '/security:something'
+          prompt: '/security:analyze-github'
 
       - name: 'Run Gemini pull request review'
         uses: 'QuanZhang-William/run-gemini-cli@prototype-security-agent' # ratchet:exclude
