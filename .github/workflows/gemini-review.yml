@@ -111,7 +111,7 @@ jobs:
           prompt: '/security:analyze-github'
 
       - name: 'Run Gemini pull request review'
-        uses: 'QuanZhang-William/run-gemini-cli@prototype-security-agent' # ratchet:exclude
+        uses: 'google-github-actions/run-gemini-cli@v0@prototype-security-agent' # ratchet:exclude
         id: 'gemini_pr_review'
         env:
           GITHUB_TOKEN: '${{ steps.mint_identity_token.outputs.token || secrets.GITHUB_TOKEN || github.token }}'
@@ -131,7 +131,6 @@ jobs:
           google_api_key: '${{ secrets.GOOGLE_API_KEY }}'
           use_gemini_code_assist: '${{ vars.GOOGLE_GENAI_USE_GCA }}'
           gemini_debug: 'true'
-          pat: '${{ secrets.PAT }}'
           settings: |-
             {
               "maxSessionTurns": 100,
