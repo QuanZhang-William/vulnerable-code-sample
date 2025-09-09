@@ -173,7 +173,7 @@ jobs:
             3.3 **Submit Final Review:** Call `mcp__github__submit_pending_pull_request_review` with a summary comment. **DO NOT** approve the pull request. **DO NOT** request changes. The summary comment **MUST** use this exact markdown format:
 
                 <SUMMARY>
-                ## 📋 Review Summary
+                ## 📋 Security Analysis Summary
 
                 A brief, high-level assessment of the Pull Request's objective and quality (2-3 sentences).
 
